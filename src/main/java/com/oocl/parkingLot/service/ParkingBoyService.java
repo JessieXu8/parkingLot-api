@@ -24,4 +24,12 @@ public class ParkingBoyService {
         parkingLotList.add(parkingLot);
         return parkingBoys.get(pbid).getParkingLots();
     }
+
+    public List<ParkingBoy> getParkingBoys() {
+        List<ParkingBoy> parkingBoyList = new ArrayList<>();
+        for (Integer i : parkingBoys.keySet()){
+            parkingBoyList.add(parkingBoys.get(i));
+        }
+        return parkingBoyList;
+    }
 }
