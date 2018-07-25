@@ -1,5 +1,5 @@
-#ParkingLot
-###1.创建parkingBoy
+# ParkingLot
+### 1.创建parkingBoy
 * method:post
 * path:"/parkingBoys"
 * request:ParkingBoy
@@ -11,7 +11,7 @@
     }
 ```
 
-###2.创建parkingLot
+### 2.创建parkingLot
 * method:post
 * path:"/parkingLots"
 * request:ParkingLot
@@ -24,7 +24,7 @@
 
 ```
 
-###3.给ParkingBoy增加parkingLot
+### 3.给ParkingBoy增加parkingLot
 * method:put
 * path:"/parkingLots/{pbid}"
 * request:ParkingLot
