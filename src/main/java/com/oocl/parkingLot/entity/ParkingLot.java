@@ -8,6 +8,7 @@ public class ParkingLot {
     private int parkingLotId;
     private int parkingBoyId;
     private int size;
+    private int usedSize;
 
     public int getParkingLotId() {
         return parkingLotId;
@@ -31,5 +32,20 @@ public class ParkingLot {
 
     public void setParkingBoyId(int parkingBoyId) {
         this.parkingBoyId = parkingBoyId;
+    }
+
+    public int getUsedSize() {
+        return usedSize;
+    }
+
+    public void setUsedSize(int usedSize) {
+        this.usedSize = usedSize;
+    }
+
+    public boolean isfull(){
+        if((size-usedSize)>0){
+            return false;
+        }
+        return true;
     }
 }

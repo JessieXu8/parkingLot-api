@@ -26,4 +26,10 @@ public class ParkingBoyController {
     public List<ParkingLot> addParkingLotToParkingBoyById(@PathVariable int pbid,@RequestBody ParkingLot parkingLot){
         return parkingBoyService.addParkingLotToParkingBoyById(pbid,parkingLot);
     }
+
+    @GetMapping("/parkingBoys/{pbid}")
+    public List<ParkingLot> getParkingLotsByParkingBoyId(@PathVariable int pbid){
+        return parkingBoyService.getParkingLotsByParkingBoyId(pbid);
+    }
+
 }

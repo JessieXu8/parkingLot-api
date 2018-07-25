@@ -32,4 +32,8 @@ public class ParkingBoyService {
         }
         return parkingBoyList;
     }
+
+    public List<ParkingLot> getParkingLotsByParkingBoyId(int pbid) {
+        return parkingBoys.get(pbid).getParkingLots();
+    }
 }
