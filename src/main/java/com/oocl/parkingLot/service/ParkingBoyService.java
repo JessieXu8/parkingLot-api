@@ -16,4 +16,12 @@ public class ParkingBoyService {
         parkingBoys.put(newParkingBoy.getParkingBoyId(),newParkingBoy);
         return newParkingBoy;
     }
+
+    public List<ParkingLot> addParkingLotToParkingBoyById(int pbid, ParkingLot parkingLot) {
+        parkingLot.setParkingBoyId(pbid);
+        ParkingBoy parkingBoy = parkingBoys.get(pbid);
+        List<ParkingLot> parkingLotList= parkingBoy.getParkingLots();
+        parkingLotList.add(parkingLot);
+        return parkingBoys.get(pbid).getParkingLots();
+    }
 }

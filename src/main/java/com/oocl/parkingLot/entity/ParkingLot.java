@@ -6,6 +6,7 @@ import org.springframework.stereotype.Component;
 public class ParkingLot {
 
     private int parkingLotId;
+    private int parkingBoyId;
     private int size;
 
     public int getParkingLotId() {
@@ -24,4 +25,11 @@ public class ParkingLot {
         this.size = size;
     }
 
+    public int getParkingBoyId() {
+        return parkingBoyId;
+    }
+
+    public void setParkingBoyId(int parkingBoyId) {
+        this.parkingBoyId = parkingBoyId;
+    }
 }

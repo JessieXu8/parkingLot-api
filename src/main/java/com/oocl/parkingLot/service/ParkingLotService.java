@@ -16,4 +16,12 @@ public class ParkingLotService {
         parkingLots.put(newParkingLot.getParkingLotId(),newParkingLot);
         return newParkingLot;
     }
+
+    public List<ParkingLot> getParkingLots() {
+        List<ParkingLot> parkingLotList = new ArrayList<>();
+        for (Integer i :parkingLots.keySet()){
+            parkingLotList.add(parkingLots.get(i));
+        }
+        return parkingLotList;
+    }
 }
